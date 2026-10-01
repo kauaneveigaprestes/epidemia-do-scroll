@@ -1,0 +1,73 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+body { background-color: #060913; color: #e2e8f0; line-height: 1.7; padding-bottom: 60px; }
+
+/* Menu Superior Neon */
+nav { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px 8%; 
+    background: #0d1122; 
+    border-bottom: 2px solid #8b5cf6; 
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo { font-weight: 800; font-size: 1.3rem; color: #ffffff; letter-spacing: 1px; }
+.logo span { color: #06b6d4; margin-left: 5px; }
+
+nav .links a { text-decoration: none; color: #94a3b8; margin-left: 25px; font-weight: 600; transition: 0.3s; padding: 6px 12px; border-radius: 6px; }
+nav .links a:hover, nav .links a.ativo { color: #06b6d4; background-color: rgba(6, 182, 212, 0.1); }
+
+/* Hero principal */
+.boas-vindas { text-align: center; padding: 110px 10%; background: radial-gradient(circle, #1e1b4b 0%, #060913 100%); }
+.boas-vindas h1 { font-size: 2.8rem; color: #ffffff; margin-bottom: 20px; font-weight: 800; line-height: 1.3; }
+.boas-vindas p { font-size: 1.2rem; color: #94a3b8; max-width: 850px; margin: 0 auto; }
+
+/* Botão Premium */
+.botao-entrar { 
+    display: inline-block; 
+    padding: 16px 42px; 
+    background: linear-gradient(135deg, #8b5cf6, #06b6d4); 
+    color: #ffffff; 
+    text-decoration: none; 
+    border-radius: 30px; 
+    font-weight: bold; 
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+    transition: 0.4s;
+    margin-top: 25px;
+}
+.botao-entrar:hover { transform: scale(1.03); box-shadow: 0 6px 22px rgba(6, 182, 212, 0.6); }
+
+/* Grid de Cards */
+.destaques { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; padding: 40px 8%; }
+.card { background: #0d1122; padding: 32px; border-radius: 12px; border: 1px solid #1e1b4b; transition: 0.3s; }
+.card:hover { border-color: #06b6d4; transform: translateY(-4px); box-shadow: 0 4px 20px rgba(6, 182, 212, 0.1); }
+.card h3 { color: #ffffff; margin-bottom: 12px; font-size: 1.3rem; }
+.card p { color: #94a3b8; font-size: 0.95rem; }
+
+/* Páginas de Conteúdo */
+.conteudo-principal { max-width: 800px; margin: 50px auto; padding: 0 20px; }
+.conteudo-principal h2 { font-size: 2.4rem; color: #ffffff; text-align: center; font-weight: 800; }
+.conteudo-principal .subtitulo { text-align: center; color: #64748b; margin-bottom: 45px; font-size: 1.1rem; }
+
+.topico { background: #0d1122; padding: 32px; border-radius: 12px; margin-bottom: 25px; border-left: 4px solid #8b5cf6; }
+.topico h3 { color: #ffffff; margin-bottom: 15px; font-size: 1.35rem; }
+.topico p { color: #cbd5e1; font-size: 1.05rem; text-align: justify; }
+
+.caixa-conclusao { background: linear-gradient(90deg, #1e1b4b, #0d1122); padding: 30px; border-radius: 12px; margin: 40px 0; border: 1px dashed #06b6d4; }
+.caixa-conclusao h4 { color: #06b6d4; font-size: 1.2rem; margin-bottom: 10px; }
+.caixa-conclusao p { font-size: 1rem; color: #e2e8f0; }
+
+/* Navegadores de páginas inferiores */
+.navegacao-paginas { display: flex; justify-content: space-between; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e293b; }
+.botao-voltar { color: #94a3b8; text-decoration: none; font-weight: bold; transition: 0.3s; }
+.botao-voltar:hover { color: #ffffff; }
+.botao-avancar { background-color: transparent; border: 2px solid #06b6d4; color: #06b6d4; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+.botao-avancar:hover { background-color: #06b6d4; color: #ffffff; }
+
+/* Rodapé */
+footer { padding: 40px; background: #080c16; text-align: center; border-top: 1px solid #1e1b4b; font-size: 0.9rem; color: #64748b; margin-top: 80px; }
